@@ -13,7 +13,7 @@ public partial class Player : CharacterBody2D
 		// Add the gravity.
 		if (!IsOnFloor())
 		{
-			velocity += GetGravity() * (float)delta;
+			velocity += GetGravity() * 0.0001f;
 		}
 
 		// Handle Jump.
